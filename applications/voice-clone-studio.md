@@ -17,15 +17,18 @@
 
 | Capability | Engine | Result |
 | --- | --- | --- |
-| Voice generation | Qwen3-TTS 0.6B and 1.7B CustomVoice | Successful French 24 kHz outputs; 1.7B style instruction validated |
+| Original voice creation | Qwen3-TTS 1.7B VoiceDesign | Successful original French tavern-keeper voice at 24 kHz |
+| Preset voice generation | Qwen3-TTS 0.6B and 1.7B CustomVoice | Successful French 24 kHz outputs; 1.7B style instruction validated |
 | Sound generation | MMAudio Medium 44 kHz | Successful text-to-audio 44.1 kHz output |
 
 Both tests used an NVIDIA GeForce RTX 3060 12 GB with Python 3.12 and PyTorch 2.9.1/CUDA 12.8.
 
 ## Notes
 
-- The voice tests used the built-in Qwen `Ryan` speaker. They validate CustomVoice generation through the application, not zero-shot cloning from a user-provided recording.
+- The VoiceDesign test created an original voice from a written description without a preset speaker. It produced 5.44 seconds of French speech at 24 kHz.
+- The earlier CustomVoice tests used the built-in Qwen `Ryan` speaker. They validate preset-voice generation only and do not represent custom voice creation.
 - The 1.7B test accepted an explicit energetic, brisk French delivery instruction and produced a 5.76-second result versus 6.24 seconds for the uninstructed 0.6B baseline.
+- Zero-shot cloning from a user-provided recording uses the separate Qwen Base mode and remains untested in this record.
 - The sound test exercised Voice Clone Studio's own `FoleyManager`, including automatic MMAudio weight loading and output generation.
 - MMAudio video-to-audio remains untested in this record.
 - The first runs download several gigabytes of model and feature weights.
