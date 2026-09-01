@@ -1,0 +1,36 @@
+{
+  "$schema": "./schema/catalog.schema.json",
+  "catalog_version": 1,
+  "entries": [
+    {
+      "id": "qwen3-tts",
+      "name": "Qwen3-TTS",
+      "category": "text-to-speech",
+      "status": "tested",
+      "upstream": "https://github.com/QwenLM/Qwen3-TTS",
+      "license": "Apache-2.0",
+      "tested_with": ["VoiceBox"],
+      "field_note": "models/text-to-speech/qwen3-tts.md"
+    },
+    {
+      "id": "whisper-cpp",
+      "name": "Whisper via whisper.cpp",
+      "category": "speech-to-text",
+      "status": "tested",
+      "upstream": "https://github.com/ggerganov/whisper.cpp",
+      "license": "MIT",
+      "tested_with": ["ElysListen"],
+      "field_note": "models/speech-to-text/whisper.md"
+    },
+    {
+      "id": "ace-step-1-5",
+      "name": "ACE-Step 1.5",
+      "category": "music-generation",
+      "status": "tested",
+      "upstream": "https://huggingface.co/ACE-Step/Ace-Step1.5",
+      "license": "MIT",
+      "tested_with": ["ProdIA-MAX"],
+      "field_note": "models/music-generation/ace-step-1.5.md"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+# Model weights and generated media
+*.bin
+*.ckpt
+*.gguf
+*.onnx
+*.pt
+*.pth
+*.safetensors
+outputs/
+samples/private/
+
+# Local environments and caches
+.env
+.venv/
+venv/
+__pycache__/
+.cache/
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
