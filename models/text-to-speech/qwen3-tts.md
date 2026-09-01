@@ -17,7 +17,18 @@
 
 Qwen3-TTS was run successfully through **VoiceBox**, the local voice synthesis studio used as its host application. This real-world use is the validation required for inclusion in the Fieldbook; a separate benchmark is not an admission requirement.
 
-It was subsequently validated through **Voice Clone Studio** on 2026-09-01 using `Qwen3-TTS-12Hz-0.6B-CustomVoice`, the `Ryan` speaker and French text. The run produced 6.24 seconds of 24 kHz audio on an NVIDIA GeForce RTX 3060 12 GB with PyTorch 2.9.1/CUDA 12.8. The first run, including model download and load, completed in approximately 63 seconds.
+It was subsequently validated through **Voice Clone Studio** on 2026-09-01 with two CustomVoice checkpoints, the `Ryan` speaker and the same French text:
+
+| Checkpoint | Style instruction | Output | First-run total |
+| --- | --- | --- | --- |
+| `Qwen3-TTS-12Hz-0.6B-CustomVoice` | None | 6.24 s at 24 kHz | ~63 s |
+| `Qwen3-TTS-12Hz-1.7B-CustomVoice` | Energetic, brisk French tavern keeper | 5.76 s at 24 kHz | ~61 s |
+
+Both runs used an NVIDIA GeForce RTX 3060 12 GB with PyTorch 2.9.1/CUDA 12.8. The 1.7B instruction was:
+
+> Speak in energetic, brisk French, with a warm tavern-keeper personality. Keep a lively pace, use natural emphasis, and avoid slow or sleepy delivery.
+
+For this sentence and seed, the instructed 1.7B output was 0.48 seconds, or about 7.7%, shorter than the uninstructed 0.6B output. This timing is descriptive rather than a general performance benchmark; delivery quality remains a listening judgment.
 
 The exact VoiceBox checkpoint and environment were not recorded for the initial note. They may be added later if useful, but the entry is already considered tested.
 
