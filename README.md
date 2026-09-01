@@ -12,6 +12,7 @@ This is not a directory of every model available. An entry belongs here only aft
 | Speech to text | Whisper via whisper.cpp | ElysListen | [Read the note](models/speech-to-text/whisper.md) |
 | Music generation | ACE-Step 1.5 | ProdIA-MAX | [Read the note](models/music-generation/ace-step-1.5.md) |
 | Sound generation | MMAudio | Voice Clone Studio | [Read the note](models/sound-generation/mmaudio.md) |
+| Voice conversion | Chatterbox Voice Conversion | Voice Clone Studio | [Read the note](models/voice-conversion/chatterbox-vc.md) |
 
 The machine-readable source of truth is [`catalog.json`](catalog.json).
 
@@ -47,4 +48,4 @@ The original content of this repository is released under the [MIT License](LICE
 
 ## Tested applications
 
-- [Voice Clone Studio](applications/voice-clone-studio.md): voice generation with Qwen3-TTS and sound generation with MMAudio
+- [Voice Clone Studio](applications/voice-clone-studio.md): voice generation with Qwen3-TTS, voice conversion with Chatterbox, and sound generation with MMAudio

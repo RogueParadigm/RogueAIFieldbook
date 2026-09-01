@@ -41,6 +41,16 @@
       "license": "MIT code; pretrained-weight usage requires dataset-license review",
       "tested_with": ["Voice Clone Studio"],
       "field_note": "models/sound-generation/mmaudio.md"
+    },
+    {
+      "id": "chatterbox-vc",
+      "name": "Chatterbox Voice Conversion",
+      "category": "voice-conversion",
+      "status": "tested",
+      "upstream": "https://github.com/resemble-ai/chatterbox",
+      "license": "MIT",
+      "tested_with": ["Voice Clone Studio"],
+      "field_note": "models/voice-conversion/chatterbox-vc.md"
     }
   ]
 }
