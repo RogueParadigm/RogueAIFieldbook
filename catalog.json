@@ -9,7 +9,7 @@
       "status": "tested",
       "upstream": "https://github.com/QwenLM/Qwen3-TTS",
       "license": "Apache-2.0",
-      "tested_with": ["VoiceBox"],
+      "tested_with": ["VoiceBox", "Voice Clone Studio"],
       "field_note": "models/text-to-speech/qwen3-tts.md"
     },
     {
@@ -31,6 +31,16 @@
       "license": "MIT",
       "tested_with": ["ProdIA-MAX"],
       "field_note": "models/music-generation/ace-step-1.5.md"
+    },
+    {
+      "id": "mmaudio",
+      "name": "MMAudio",
+      "category": "sound-generation",
+      "status": "tested",
+      "upstream": "https://github.com/hkchengrex/MMAudio",
+      "license": "MIT code; pretrained-weight usage requires dataset-license review",
+      "tested_with": ["Voice Clone Studio"],
+      "field_note": "models/sound-generation/mmaudio.md"
     }
   ]
 }

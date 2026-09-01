@@ -5,5 +5,6 @@ Field notes are organized by capability, not vendor. A model can appear in more 
 - [`text-to-speech/`](text-to-speech/)
 - [`speech-to-text/`](speech-to-text/)
 - [`music-generation/`](music-generation/)
+- [`sound-generation/`](sound-generation/)
 
 Use [`templates/model-field-note.md`](../templates/model-field-note.md) for new entries and add each note to [`catalog.json`](../catalog.json).
