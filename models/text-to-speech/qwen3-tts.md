@@ -50,6 +50,16 @@ For this sentence and seed, the instructed 1.7B CustomVoice output was 0.48 seco
 | Clone a specific recorded voice | Base 0.6B or 1.7B with reference audio and transcript |
 | Use and style a voice supplied by Qwen | CustomVoice 0.6B or 1.7B |
 
+### Cloning the designed voice
+
+The VoiceDesign result was then reused as reference audio for `Qwen3-TTS-12Hz-1.7B-Base` in full in-context cloning mode. The exact transcript of the reference was supplied with the WAV, and the Base model generated:
+
+> J'ai une quête pour vous, voyageur !
+
+The cloned line completed successfully at 24 kHz with a duration of 2.72 seconds. On the RTX 3060 test system, reference processing took approximately 1.27 seconds and generation approximately 7.96 seconds after model load.
+
+This validates the complete reusable-character workflow: describe an original voice with VoiceDesign, retain its generated reference clip and transcript, then use Base 1.7B to speak new lines in that voice. Full in-context mode was used to retain delivery characteristics as well as timbre.
+
 The exact VoiceBox checkpoint and environment were not recorded for the initial note. They may be added later if useful, but the entry is already considered tested.
 
 ## Optional future documentation
