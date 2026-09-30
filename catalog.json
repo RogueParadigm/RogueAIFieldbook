@@ -9,7 +9,10 @@
       "status": "tested",
       "upstream": "https://github.com/QwenLM/Qwen3-TTS",
       "license": "Apache-2.0",
-      "tested_with": ["VoiceBox", "Voice Clone Studio"],
+      "tested_with": [
+        "VoiceBox",
+        "Voice Clone Studio"
+      ],
       "field_note": "models/text-to-speech/qwen3-tts.md"
     },
     {
@@ -19,7 +22,9 @@
       "status": "tested",
       "upstream": "https://github.com/ggerganov/whisper.cpp",
       "license": "MIT",
-      "tested_with": ["ElysListen"],
+      "tested_with": [
+        "ElysListen"
+      ],
       "field_note": "models/speech-to-text/whisper.md"
     },
     {
@@ -29,7 +34,10 @@
       "status": "tested",
       "upstream": "https://huggingface.co/ACE-Step/Ace-Step1.5",
       "license": "MIT",
-      "tested_with": ["ProdIA-MAX"],
+      "tested_with": [
+        "ProdIA-MAX",
+        "Pride Apocalypse"
+      ],
       "field_note": "models/music-generation/ace-step-1.5.md"
     },
     {
@@ -39,7 +47,10 @@
       "status": "tested",
       "upstream": "https://github.com/hkchengrex/MMAudio",
       "license": "MIT code; pretrained-weight usage requires dataset-license review",
-      "tested_with": ["Voice Clone Studio"],
+      "tested_with": [
+        "Voice Clone Studio",
+        "Pride Apocalypse"
+      ],
       "field_note": "models/sound-generation/mmaudio.md"
     },
     {
@@ -49,8 +60,72 @@
       "status": "tested",
       "upstream": "https://github.com/resemble-ai/chatterbox",
       "license": "MIT",
-      "tested_with": ["Voice Clone Studio"],
+      "tested_with": [
+        "Voice Clone Studio"
+      ],
       "field_note": "models/voice-conversion/chatterbox-vc.md"
+    },
+    {
+      "id": "flux-2-klein-4b",
+      "name": "FLUX.2 [klein] 4B",
+      "category": "image-generation",
+      "status": "tested",
+      "upstream": "https://github.com/black-forest-labs/flux2",
+      "license": "Apache-2.0",
+      "tested_with": [
+        "Open ImageGen"
+      ],
+      "field_note": "models/image-generation/flux-2-klein-4b.md"
+    },
+    {
+      "id": "sensenova-u1-5-8b-mot-q8",
+      "name": "SenseNova-U1.5-8B-MoT Q8",
+      "category": "image-generation",
+      "status": "tested",
+      "upstream": "https://github.com/OpenSenseNova/SenseNova-U1",
+      "license": "Apache-2.0",
+      "tested_with": [
+        "Open ImageGen",
+        "Isekai benchmark"
+      ],
+      "field_note": "models/image-generation/sensenova-u1.5-8b-mot.md"
+    },
+    {
+      "id": "qwen-image-edit-2511",
+      "name": "Qwen-Image-Edit-2511",
+      "category": "image-generation",
+      "status": "tested",
+      "upstream": "https://huggingface.co/Qwen/Qwen-Image-Edit-2511",
+      "license": "Apache-2.0",
+      "tested_with": [
+        "Open ImageGen",
+        "Isekai benchmark"
+      ],
+      "field_note": "models/image-generation/qwen-image-edit-2511.md"
+    },
+    {
+      "id": "bartstyle-rev3-counterfeit-v3",
+      "name": "BArtstyle REv3 + Counterfeit V3",
+      "category": "image-generation",
+      "status": "tested",
+      "upstream": "https://civitai.com/models/29215/bartstyle-or-blue-archive-art-style-lora-or-anime-flat-color-or-or",
+      "license": "Counterfeit V3: CreativeML Open RAIL-M; LoRA: Civitai model permissions",
+      "tested_with": [
+        "Isekai benchmark"
+      ],
+      "field_note": "models/image-generation/bartstyle-rev3-counterfeit-v3.md"
+    },
+    {
+      "id": "birefnet-matting",
+      "name": "BiRefNet Matting",
+      "category": "background-removal",
+      "status": "tested",
+      "upstream": "https://github.com/ZhengPeng7/BiRefNet",
+      "license": "MIT",
+      "tested_with": [
+        "Open ImageGen"
+      ],
+      "field_note": "models/background-removal/birefnet-matting.md"
     }
   ]
 }

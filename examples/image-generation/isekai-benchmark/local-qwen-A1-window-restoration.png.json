@@ -1,0 +1,68 @@
+{
+  "command": "edit",
+  "model": "qwen-image-edit-2511",
+  "repo_id": "Qwen/Qwen-Image-Edit-2511",
+  "license": "Apache-2.0",
+  "prompt": "Input image roles:\nImage 1: edit target and absolute authority for every pixel except the masked missing window\nImage 2: window design and placement authority only; never copy its character, global rendering, geometry or other scene content\nPrimary request: Inside the small mask only, restore one narrow vertical second-story window centered in the blank left house wall. Copy the small window's exact slim proportions, dark frame, sill and perspective from Image 2, then match Image 1's painted-balance rendering and sunset illumination. The window must remain entirely inside the mask and read as a small window, never a door or large opening. Keep every pixel outside the mask unchanged. Add nothing else; no text, border, logo or watermark.",
+  "size": "512x1024",
+  "steps": 20,
+  "guidance_scale": 4.0,
+  "seed": 260909,
+  "input_images": [
+    "external/real-panel-tests/C01-A1-painted-balance-structured-v02-candidate.png",
+    "external/final-panels/A1.png"
+  ],
+  "input_image_roles": [
+    "edit target and absolute authority for every pixel except the masked missing window",
+    "window design and placement authority only; never copy its character, global rendering, geometry or other scene content"
+  ],
+  "transparent": false,
+  "offload": "sequential",
+  "outputs": [
+    "examples/image-generation/isekai-benchmark/local-qwen-A1-window-restoration.png"
+  ],
+  "raw_edit_outputs": [
+    "examples/image-generation/isekai-benchmark/local-qwen-A1-window-restoration.raw-edit.png"
+  ],
+  "created_at": "2026-09-02T20:25:59.474728+00:00",
+  "output": "examples/image-generation/isekai-benchmark/local-qwen-A1-window-restoration.png",
+  "output_sha256": "12492430937d1917d07c98ecd55cd3fc93aefe9483f609e1378a59af49b2ca9f",
+  "inference_seconds": 1214.428,
+  "generation_stage_seconds": 1216.852,
+  "total_command_seconds": 1236.377,
+  "model_load": {
+    "model_load_seconds": 3.826,
+    "resolved_revision": "6f3ccc0b56e431dc6a0c2b2039706d7d26f22cb9",
+    "dtype": "bfloat16",
+    "offload": "sequential",
+    "diffusers": "0.39.0"
+  },
+  "runtime": {
+    "python": "3.12.13",
+    "torch": "2.6.0+cu124",
+    "diffusers": "0.39.0",
+    "transformers": "5.14.1",
+    "accelerate": "1.14.0",
+    "PIL": "12.3.0"
+  },
+  "gpu": {
+    "available": true,
+    "name": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "compute_capability": "8.6",
+    "bf16": true,
+    "torch": "2.6.0+cu124",
+    "cuda": "12.4"
+  },
+  "input_sha256": {
+    "external/real-panel-tests/C01-A1-painted-balance-structured-v02-candidate.png": "2008f7868f34204cf931c4f660dca0082e61736f7792f50e3ccd012a22d4c2c7",
+    "external/final-panels/A1.png": "d4a72af50224d3755a0bf6f5e36f0c2e53dd7ed70d32776aee0a4305e35b5ef5"
+  },
+  "mask": "examples/image-generation/isekai-benchmark/A1-window-edit-mask-v2.png",
+  "mask_mode": "edit-white",
+  "raw_edit": {
+    "path": "examples/image-generation/isekai-benchmark/local-qwen-A1-window-restoration.raw-edit.png",
+    "sha256": "a38b7540ae86c39f03ff9a85c68baf41485e2ea834ac72c7a8b9bbcfb9ca96cc"
+  },
+  "postprocess": null
+}

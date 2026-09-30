@@ -1,0 +1,85 @@
+{
+  "command": "edit",
+  "model": "flux2-klein-4b",
+  "repo_id": "black-forest-labs/FLUX.2-klein-4B",
+  "license": "Apache-2.0",
+  "prompt": "Input image roles:\nImage 1: edit target and absolute authority for all content outside the small missing-window mask\nImage 2: spatially aligned authority only for the small window geometry, scale, placement, frame and sill\nPrimary request: Inside the masked blank plaster only, restore exactly one small narrow vertical second-story window matching Image 2. Preserve its slim proportions, dark simple frame, single horizontal divider, shallow sill and wall perspective. Match Image 1's softer painted wall texture and sunset illumination. Keep it small and entirely within the mask; never make a door, bay window or projecting structure. Preserve everything else exactly. Add nothing else.",
+  "size": "576x768",
+  "steps": 4,
+  "guidance_scale": 1.0,
+  "seed": 260912,
+  "input_images": [
+    "external/real-panel-tests/C01-A1-painted-balance-structured-v02-candidate.png",
+    "external/final-panels/A1.png"
+  ],
+  "input_image_roles": [
+    "edit target and absolute authority for all content outside the small missing-window mask",
+    "spatially aligned authority only for the small window geometry, scale, placement, frame and sill"
+  ],
+  "transparent": false,
+  "offload": "model",
+  "outputs": [
+    "examples/image-generation/isekai-benchmark/local-focused-auto-A1-flux-window.png"
+  ],
+  "raw_edit_outputs": [
+    "examples/image-generation/isekai-benchmark/local-focused-auto-A1-flux-window.raw-edit.png"
+  ],
+  "focus_region": {
+    "x": 51,
+    "y": 299,
+    "width": 272,
+    "height": 362,
+    "padding": 96,
+    "aligned_same-size_references": true
+  },
+  "created_at": "2026-09-02T21:05:17.604274+00:00",
+  "output": "examples/image-generation/isekai-benchmark/local-focused-auto-A1-flux-window.png",
+  "output_sha256": "3b7250ebc84747f46dadc624628b1246fa7eb85ea3255dacdff10e66cb37f4b4",
+  "inference_seconds": 32.831,
+  "generation_stage_seconds": 35.627,
+  "total_command_seconds": 57.517,
+  "model_load": {
+    "model_load_seconds": 0.837,
+    "resolved_revision": "e7b7dc27f91deacad38e78976d1f2b499d76a294",
+    "dtype": "bfloat16",
+    "offload": "model",
+    "diffusers": "0.39.0"
+  },
+  "runtime": {
+    "python": "3.12.13",
+    "torch": "2.6.0+cu124",
+    "diffusers": "0.39.0",
+    "transformers": "5.14.1",
+    "accelerate": "1.14.0",
+    "PIL": "12.3.0"
+  },
+  "gpu": {
+    "available": true,
+    "name": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "compute_capability": "8.6",
+    "bf16": true,
+    "torch": "2.6.0+cu124",
+    "cuda": "12.4"
+  },
+  "input_sha256": {
+    "external/real-panel-tests/C01-A1-painted-balance-structured-v02-candidate.png": "2008f7868f34204cf931c4f660dca0082e61736f7792f50e3ccd012a22d4c2c7",
+    "external/final-panels/A1.png": "d4a72af50224d3755a0bf6f5e36f0c2e53dd7ed70d32776aee0a4305e35b5ef5"
+  },
+  "mask": "examples/image-generation/isekai-benchmark/A1-window-edit-mask-v2.png",
+  "mask_mode": "edit-white",
+  "mask_feather": 6.0,
+  "mask_metrics": {
+    "total_pixels": 1573488,
+    "editable_pixels": 13260,
+    "protected_pixels": 1560228,
+    "editable_changed_pct": 100.0,
+    "protected_exact_pct": 99.584932,
+    "whole_changed_pct": 1.254283
+  },
+  "raw_edit": {
+    "path": "examples/image-generation/isekai-benchmark/local-focused-auto-A1-flux-window.raw-edit.png",
+    "sha256": "1fdbc9ff5c3e2434d9a61e383cad3151a240f9729d0f55ad6c223a36b76fcb3f"
+  },
+  "postprocess": null
+}

@@ -1,0 +1,1 @@
+sensenova-u1[gguf] @ git+https://github.com/OpenSenseNova/SenseNova-U1.git@f97964a6e54b0abf92aa2db849af4e942bb2ff08

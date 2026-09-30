@@ -1,0 +1,19 @@
+{
+  "model": "gsdf/Counterfeit-V3.0 (fix_fp16 single-file)",
+  "model_sha256": "A54C944E4C04E9D9CA43468EF5B90EA0408BB6264829A4980DE79A768DF7179F",
+  "lora": "BArtstyle REv3 CF3 Lion",
+  "lora_sha256": "DB117FB8CAA5E8E6F66F7C79DABEADC8524585D30D30DD42F77B4BC169AF0F27",
+  "lora_weight": 0.65,
+  "lora_components": "UNet only (legacy text-encoder compatibility workaround)",
+  "mode": "text-to-image",
+  "resolution": [
+    576,
+    1024
+  ],
+  "guidance_scale": 7.0,
+  "steps": 30,
+  "seed": 260920,
+  "prompt": "masterpiece, best quality, 1girl, solo, young adult woman, dark brown high ponytail, round black glasses, black astronomy t-shirt, blue jeans, burgundy crossbody bag, sitting in a fantasy bakery, tasting warm bread, reading a price card, cool blue window light, warm oven glow, anime game key visual, flat color, clean lineart, cel shading",
+  "negative_prompt": "worst quality, low quality, blurry, photorealistic, 3d, extra hands, extra arms, extra limbs, missing fingers, fused fingers, malformed hands, floating objects, utensil, text, watermark, logo",
+  "elapsed_seconds": 17.643
+}

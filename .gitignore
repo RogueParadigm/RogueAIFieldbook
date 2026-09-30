@@ -15,6 +15,8 @@ samples/private/
 venv/
 __pycache__/
 .cache/
+.local/
+output/
 
 # Editors and operating systems
 .idea/

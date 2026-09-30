@@ -1,13 +1,11 @@
 # Workflows
 
-This directory is reserved for reproducible workflows that have been tested end to end.
+This directory contains reproducible workflows that have been tested end to end. A workflow records exact model and dependency revisions, portable implementation details, minimal execution instructions, expected outputs and known limitations.
 
-Planned examples include ComfyUI workflow JSON files, launch scripts and integration recipes. A workflow is added only with:
+Use [`templates/workflow-field-note.md`](../templates/workflow-field-note.md) for new entries.
 
-- its exact model and dependency revisions;
-- a sanitized, portable workflow file;
-- minimal setup and execution instructions;
-- the hardware used for the test;
-- expected outputs and known limitations.
+## Tested workflows
 
-Use [`templates/workflow-field-note.md`](../templates/workflow-field-note.md) when the first workflow is ready.
+- [Local Open ImageGen](local-open-imagegen.md)
+- [Shared AI workflow core](shared-ai-core.md)
+- [Recursive music loop banks](recursive-music-loop-banks.md)

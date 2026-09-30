@@ -1,0 +1,61 @@
+{
+  "command": "edit",
+  "model": "flux2-klein-4b",
+  "repo_id": "black-forest-labs/FLUX.2-klein-4B",
+  "license": "Apache-2.0",
+  "prompt": "Input image roles:\nImage 1: edit target and absolute authority for composition, geography, palette, lighting and protected heroine\nImage 2: supporting painted color-manga brush handling only; never composition, palette, time of day or lighting\nChange only the environmental rendering density outside the protected heroine. Reduce grass and flower micro-detail by about 35 percent while preserving the exact sky, clouds, mountain silhouettes, lake, tree masses, slopes, composition, camera, palette, neutral daylight and all story information. Use broad matte painted color planes and restrained irregular edges. Keep the heroine and her immediate contact shadow unchanged. Do not add objects, text, borders, logos or watermarks.",
+  "size": "1664x944",
+  "steps": 4,
+  "guidance_scale": 1.0,
+  "seed": 260906,
+  "input_images": [
+    "external/final-panels/A9.png",
+    "external/style/style-anchor-v3-final-art-derived.png"
+  ],
+  "input_image_roles": [
+    "edit target and absolute authority for composition, geography, palette, lighting and protected heroine",
+    "supporting painted color-manga brush handling only; never composition, palette, time of day or lighting"
+  ],
+  "transparent": false,
+  "offload": "model",
+  "outputs": [
+    "examples/image-generation/isekai-benchmark/local-flux2-A9-protected-background-edit.png"
+  ],
+  "created_at": "2026-09-02T19:37:42.544915+00:00",
+  "output": "examples/image-generation/isekai-benchmark/local-flux2-A9-protected-background-edit.png",
+  "output_sha256": "3f43b186219ac80a296b453b461557b5fee477fe775f40b77ad2c7d55b8e869c",
+  "inference_seconds": 85.325,
+  "generation_stage_seconds": 89.267,
+  "total_command_seconds": 99.964,
+  "model_load": {
+    "model_load_seconds": 0.653,
+    "resolved_revision": "e7b7dc27f91deacad38e78976d1f2b499d76a294",
+    "dtype": "bfloat16",
+    "offload": "model",
+    "diffusers": "0.39.0"
+  },
+  "runtime": {
+    "python": "3.12.13",
+    "torch": "2.6.0+cu124",
+    "diffusers": "0.39.0",
+    "transformers": "5.14.1",
+    "accelerate": "1.14.0",
+    "PIL": "12.3.0"
+  },
+  "gpu": {
+    "available": true,
+    "name": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "compute_capability": "8.6",
+    "bf16": true,
+    "torch": "2.6.0+cu124",
+    "cuda": "12.4"
+  },
+  "input_sha256": {
+    "external/final-panels/A9.png": "144507b201738d991828a1beeb5b017f668428ef5a240d9730ca9d046c8685dd",
+    "external/style/style-anchor-v3-final-art-derived.png": "b26c8a469098dc6de0d6316cd02714d3caeadc9c607b56c213a26ba09422eb2f"
+  },
+  "mask": "external/style-coherence-flat-pass-2026-08-31/A9-v03-protection-mask.png",
+  "mask_mode": "preserve-white",
+  "postprocess": null
+}

@@ -1,0 +1,31 @@
+{
+  "command": "composite-mask",
+  "base": "examples/image-generation/isekai-benchmark/local-sensenova-u1.5-casual-bakery.png",
+  "edited": "examples/image-generation/isekai-benchmark/local-sensenova-u1.5-casual-bakery-v3-style-ref.png",
+  "mask": "examples/image-generation/isekai-benchmark/bakery-floating-spatula-edit-mask.png",
+  "mask_mode": "edit-white",
+  "mask_feather": 10.0,
+  "output": "examples/image-generation/isekai-benchmark/local-sensenova-u1.5-casual-bakery-v4-style-preserved.png",
+  "created_at": "2026-09-02T23:27:12.694461+00:00",
+  "output_sha256": "4a2822626b3d026d7e197d59a94038b9f318419c3deb1d255bbef121222fb7ff",
+  "base_sha256": "f4a59c66a238eb79d469cf864b7baca70aa62432a15bee45c3054bb05af8bae6",
+  "edited_sha256": "94d6d0acec07c2b7b7bc2c25065bdcaa9aa890351dc5fbb5a91ff955a24ad910",
+  "mask_sha256": "d1e230bcbc2042d2541ef3bea242283a3adf15d7579cb7124fa5116db110dec5",
+  "mask_metrics": {
+    "total_pixels": 1433600,
+    "editable_pixels": 22928,
+    "protected_pixels": 1410672,
+    "editable_changed_pct": 100.0,
+    "protected_exact_pct": 98.776399,
+    "whole_changed_pct": 2.803362
+  },
+  "runtime": {
+    "python": "3.12.13",
+    "torch": "2.8.0+cu128",
+    "diffusers": "0.40.0",
+    "transformers": "5.16.1",
+    "accelerate": "1.14.0",
+    "PIL": "12.0.0",
+    "sensenova_u1": "0.1.0"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "model": "krea/Krea-2-Turbo",
+  "mode": "text-to-image smoke",
+  "local_files_only": true,
+  "resolution": [
+    512,
+    512
+  ],
+  "steps": 2,
+  "guidance_scale": 0.0,
+  "seed": 260921,
+  "prompt": "A clean anime game illustration of a young adult woman with a dark brown high ponytail and round black glasses, sitting inside a warm fantasy bakery. She wears a black astronomy T-shirt and holds a piece of bread. Cool blue window light and warm orange oven light, clear silhouette, coherent hands, detailed environment, no text.",
+  "load_seconds": 2.722,
+  "inference_seconds": 70.306,
+  "total_seconds": 74.795,
+  "peak_cuda_reserved_gib": 2.902,
+  "gpu": "NVIDIA GeForce RTX 3060",
+  "python": "3.12.13",
+  "torch": "2.8.0+cu128",
+  "diffusers": "0.40.0",
+  "transformers": "5.16.1",
+  "offload": "pipeline leaf-level group offload with CUDA stream and low CPU memory mode"
+}

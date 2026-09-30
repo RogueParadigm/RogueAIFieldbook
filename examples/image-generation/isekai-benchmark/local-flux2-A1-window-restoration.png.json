@@ -1,0 +1,61 @@
+{
+  "command": "edit",
+  "model": "flux2-klein-4b",
+  "repo_id": "black-forest-labs/FLUX.2-klein-4B",
+  "license": "Apache-2.0",
+  "prompt": "Input image roles:\nImage 1: edit target and absolute authority for every pixel except the masked missing window\nImage 2: window design and placement authority only; never copy its character, global rendering, geometry or other scene content\nRestore only the missing narrow vertical window on the left foreground house inside the mask, matching the window position, proportions, frame construction and perspective shown in Image 2, but rendered in Image 1's painted-balance style and sunset lighting. Keep the entire scene outside the mask exactly unchanged. Do not change the roof, wall silhouette, trees, heroine, street, poles, cables, sun, palette, camera or crop. Do not add any other window, object, text, border, logo or watermark.",
+  "size": "512x1024",
+  "steps": 4,
+  "guidance_scale": 1.0,
+  "seed": 260907,
+  "input_images": [
+    "external/real-panel-tests/C01-A1-painted-balance-structured-v02-candidate.png",
+    "external/final-panels/A1.png"
+  ],
+  "input_image_roles": [
+    "edit target and absolute authority for every pixel except the masked missing window",
+    "window design and placement authority only; never copy its character, global rendering, geometry or other scene content"
+  ],
+  "transparent": false,
+  "offload": "model",
+  "outputs": [
+    "examples/image-generation/isekai-benchmark/local-flux2-A1-window-restoration.png"
+  ],
+  "created_at": "2026-09-02T19:45:32.292548+00:00",
+  "output": "examples/image-generation/isekai-benchmark/local-flux2-A1-window-restoration.png",
+  "output_sha256": "4b8825d1a43a1139161cf8caaa5094e4aebfaa3d6059fa0b7d0030d91fbb13fa",
+  "inference_seconds": 46.257,
+  "generation_stage_seconds": 47.927,
+  "total_command_seconds": 59.401,
+  "model_load": {
+    "model_load_seconds": 0.879,
+    "resolved_revision": "e7b7dc27f91deacad38e78976d1f2b499d76a294",
+    "dtype": "bfloat16",
+    "offload": "model",
+    "diffusers": "0.39.0"
+  },
+  "runtime": {
+    "python": "3.12.13",
+    "torch": "2.6.0+cu124",
+    "diffusers": "0.39.0",
+    "transformers": "5.14.1",
+    "accelerate": "1.14.0",
+    "PIL": "12.3.0"
+  },
+  "gpu": {
+    "available": true,
+    "name": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "compute_capability": "8.6",
+    "bf16": true,
+    "torch": "2.6.0+cu124",
+    "cuda": "12.4"
+  },
+  "input_sha256": {
+    "external/real-panel-tests/C01-A1-painted-balance-structured-v02-candidate.png": "2008f7868f34204cf931c4f660dca0082e61736f7792f50e3ccd012a22d4c2c7",
+    "external/final-panels/A1.png": "d4a72af50224d3755a0bf6f5e36f0c2e53dd7ed70d32776aee0a4305e35b5ef5"
+  },
+  "mask": "examples/image-generation/isekai-benchmark/A1-window-edit-mask.png",
+  "mask_mode": "edit-white",
+  "postprocess": null
+}

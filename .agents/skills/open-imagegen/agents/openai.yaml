@@ -1,0 +1,7 @@
+interface:
+  display_name: "Open ImageGen"
+  short_description: "Local open-source image generation and editing"
+  default_prompt: "Use $open-imagegen to generate or edit an image locally with open-source models."
+
+policy:
+  allow_implicit_invocation: true

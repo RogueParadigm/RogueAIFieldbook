@@ -1,0 +1,20 @@
+{
+  "model": "gsdf/Counterfeit-V3.0 (fix_fp16 single-file)",
+  "model_sha256": "A54C944E4C04E9D9CA43468EF5B90EA0408BB6264829A4980DE79A768DF7179F",
+  "lora": "BArtstyle REv3 CF3 Lion",
+  "lora_sha256": "DB117FB8CAA5E8E6F66F7C79DABEADC8524585D30D30DD42F77B4BC169AF0F27",
+  "lora_weight": 0.6,
+  "lora_components": "UNet only (legacy text-encoder compatibility workaround)",
+  "source": "examples\\image-generation\\isekai-benchmark\\local-sensenova-u1.5-casual-bakery-v6-left-background.png",
+  "resolution": [
+    576,
+    1024
+  ],
+  "strength": 0.22,
+  "guidance_scale": 7.0,
+  "steps": 30,
+  "seed": 260917,
+  "prompt": "masterpiece, best quality, game key art, anime illustration, flat colors, clean crisp line art, controlled cel shading, young adult woman in a fantasy bakery, dark brown high ponytail, round black glasses, black astronomy t-shirt, blue jeans, burgundy crossbody bag, tasting warm bread while reading a price card, cool blue window light, warm oven glow, blue sky, detailed background",
+  "negative_prompt": "worst quality, low quality, blurry, photorealistic, 3d render, extra hands, extra arms, extra limbs, missing fingers, fused fingers, malformed hands, floating objects, floating utensil, spatula, ladle, text, watermark, logo",
+  "elapsed_seconds": 6.095
+}

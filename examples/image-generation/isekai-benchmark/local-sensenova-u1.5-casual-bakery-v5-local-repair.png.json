@@ -1,0 +1,31 @@
+{
+  "command": "composite-mask",
+  "base": "examples/image-generation/isekai-benchmark/local-sensenova-u1.5-casual-bakery.png",
+  "edited": "examples/image-generation/isekai-benchmark/local-sensenova-u1.5-casual-bakery-v2.png",
+  "mask": "examples/image-generation/isekai-benchmark/bakery-window-patch-mask.png",
+  "mask_mode": "edit-white",
+  "mask_feather": 18.0,
+  "output": "examples/image-generation/isekai-benchmark/local-sensenova-u1.5-casual-bakery-v5-local-repair.png",
+  "created_at": "2026-09-02T23:29:01.571915+00:00",
+  "output_sha256": "90cd21db9ce74b162245e0ade3b54f88bdc52eed4725bd4c62198ab76feb786d",
+  "base_sha256": "f4a59c66a238eb79d469cf864b7baca70aa62432a15bee45c3054bb05af8bae6",
+  "edited_sha256": "7e201a32a409ed053678c90b6c13f4996b81c574ef3f9364af39341eb1192d37",
+  "mask_sha256": "7a99e9df6b60b9af212bff6646e80e34b57f742d618671a813f2034f33445518",
+  "mask_metrics": {
+    "total_pixels": 1433600,
+    "editable_pixels": 74529,
+    "protected_pixels": 1359071,
+    "editable_changed_pct": 99.981215,
+    "protected_exact_pct": 96.638954,
+    "whole_changed_pct": 8.384068
+  },
+  "runtime": {
+    "python": "3.12.13",
+    "torch": "2.8.0+cu128",
+    "diffusers": "0.40.0",
+    "transformers": "5.16.1",
+    "accelerate": "1.14.0",
+    "PIL": "12.0.0",
+    "sensenova_u1": "0.1.0"
+  }
+}

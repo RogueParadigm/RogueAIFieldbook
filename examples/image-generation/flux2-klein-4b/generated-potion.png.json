@@ -1,0 +1,49 @@
+{
+  "command": "generate",
+  "model": "flux2-klein-4b",
+  "repo_id": "black-forest-labs/FLUX.2-klein-4B",
+  "license": "Apache-2.0",
+  "prompt": "Use case: stylized-concept\nAsset type: game inventory icon\nPrimary request: A single ornate alchemical potion bottle with a round glass body filled with luminous emerald liquid, a dark aged-brass stopper, delicate brass filigree, and a tiny blank parchment label\nScene/backdrop: seamless neutral light-gray studio background\nStyle/medium: premium hand-painted realistic fantasy game item render\nComposition/framing: centered three-quarter view, entire object visible, generous padding, crisp silhouette\nLighting/mood: soft studio key light with a subtle emerald rim glow\nMaterials/textures: translucent glass, luminous liquid, aged brass, visible parchment fibers\nConstraints: exactly one bottle; no text; no logo; no watermark; no frame; nothing cropped",
+  "size": "1024x1024",
+  "steps": 4,
+  "guidance_scale": 1.0,
+  "seed": 260902,
+  "input_images": [],
+  "transparent": false,
+  "offload": "model",
+  "outputs": [
+    "examples/image-generation/flux2-klein-4b/generated-potion.png"
+  ],
+  "created_at": "2026-09-02T19:11:00.701395+00:00",
+  "output": "examples/image-generation/flux2-klein-4b/generated-potion.png",
+  "output_sha256": "563fdca8aa098f78f4fedc6507101077845d241ca30566b7d4d983fb1721ad1c",
+  "inference_seconds": 22.048,
+  "total_command_seconds": 22.759,
+  "model_load": {
+    "model_load_seconds": 0.917,
+    "resolved_revision": "e7b7dc27f91deacad38e78976d1f2b499d76a294",
+    "dtype": "bfloat16",
+    "offload": "model",
+    "diffusers": "0.39.0"
+  },
+  "runtime": {
+    "python": "3.12.13",
+    "torch": "2.6.0+cu124",
+    "diffusers": "0.39.0",
+    "transformers": "5.14.1",
+    "accelerate": "1.14.0",
+    "PIL": "12.3.0"
+  },
+  "gpu": {
+    "available": true,
+    "name": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "compute_capability": "8.6",
+    "bf16": true,
+    "torch": "2.6.0+cu124",
+    "cuda": "12.4"
+  },
+  "input_sha256": {},
+  "mask": null,
+  "postprocess": null
+}

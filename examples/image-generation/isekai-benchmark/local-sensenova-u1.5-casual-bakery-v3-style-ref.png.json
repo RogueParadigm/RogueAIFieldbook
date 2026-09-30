@@ -1,0 +1,73 @@
+{
+  "command": "edit",
+  "model": "sensenova-u1.5-q8",
+  "repo_id": "sensenova/SenseNova-U1.5-8B-MoT",
+  "license": "Apache-2.0",
+  "prompt": "Input image roles:\nImage 1: edit target and absolute authority for composition, pose, action, object placement, lighting, palette, and already-correct anatomy\nImage 2: absolute authority for the heroine's identity, face shape, proportions, glasses, hairstyle, clothing, and bag only; do not copy the sheet layout or white background\nImage 3: absolute authority for final line quality, character drawing style, facial rendering, color treatment, textures, and manga finish only; do not copy its scenes or composition\nPrimary request: Edit Image 1, using Images 2 and 3 only as identity and style references. Remove only the impossible floating spatula beside the window on the left and reconstruct the unobstructed blue-green wall and window background behind it. Keep the heroine in exactly the same pose with exactly two arms and two hands: the raised hand holds the bread at her mouth and the lower hand holds the price card. Preserve the original character style instead of simplifying, repainting, darkening, or making it more realistic. Preserve the face, glasses, ponytail silhouette, body proportions, T-shirt design, jeans, bag, bread, price card, basket, oven, counter, stool, framing, cool window light, warm oven glow, fine line art, color balance, and all other content. Add no utensil, hand, arm, character, readable text, or new object.",
+  "size": "896x1600",
+  "steps": 50,
+  "guidance_scale": 4.0,
+  "seed": 260916,
+  "input_images": [
+    "examples/image-generation/isekai-benchmark/local-sensenova-u1.5-casual-bakery.png",
+    "external/characters/heroine-adult-v3-neutral.png",
+    "external/style/style-anchor-v3-final-art-derived.png"
+  ],
+  "input_image_roles": [
+    "edit target and absolute authority for composition, pose, action, object placement, lighting, palette, and already-correct anatomy",
+    "absolute authority for the heroine's identity, face shape, proportions, glasses, hairstyle, clothing, and bag only; do not copy the sheet layout or white background",
+    "absolute authority for final line quality, character drawing style, facial rendering, color treatment, textures, and manga finish only; do not copy its scenes or composition"
+  ],
+  "transparent": false,
+  "offload": "balanced",
+  "outputs": [
+    "examples/image-generation/isekai-benchmark/local-sensenova-u1.5-casual-bakery-v3-style-ref.png"
+  ],
+  "raw_edit_outputs": [],
+  "input_max_pixels": 1048576,
+  "gguf_checkpoint": ".local\\models\\sensenova-u1.5-q8\\SenseNova-U1.5-8B-MoT-Q8_0.gguf",
+  "created_at": "2026-09-02T23:26:17.990029+00:00",
+  "output": "examples/image-generation/isekai-benchmark/local-sensenova-u1.5-casual-bakery-v3-style-ref.png",
+  "output_sha256": "94d6d0acec07c2b7b7bc2c25065bdcaa9aa890351dc5fbb5a91ff955a24ad910",
+  "inference_seconds": 1882.344,
+  "generation_stage_seconds": 1884.172,
+  "total_command_seconds": 1927.915,
+  "model_load": {
+    "model_load_seconds": 16.338,
+    "resolved_revision": "19bc874ef6ffc97fda9837b40fc1d1301806158a",
+    "dtype": "bfloat16",
+    "offload": "balanced",
+    "runtime": "sensenova-u1",
+    "gguf_path": ".local/models/sensenova-u1.5-q8/SenseNova-U1.5-8B-MoT-Q8_0.gguf",
+    "gguf_sha256": "61b227f036b7e8094cceab888c23b17a3fffc32d6182b039836d7cb31d688fe2"
+  },
+  "runtime": {
+    "python": "3.12.13",
+    "torch": "2.8.0+cu128",
+    "diffusers": "0.40.0",
+    "transformers": "5.16.1",
+    "accelerate": "1.14.0",
+    "PIL": "12.0.0",
+    "sensenova_u1": "0.1.0"
+  },
+  "gpu": {
+    "available": true,
+    "name": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "compute_capability": "8.6",
+    "bf16": true,
+    "torch": "2.8.0+cu128",
+    "cuda": "12.8"
+  },
+  "input_sha256": {
+    "examples/image-generation/isekai-benchmark/local-sensenova-u1.5-casual-bakery.png": "f4a59c66a238eb79d469cf864b7baca70aa62432a15bee45c3054bb05af8bae6",
+    "external/characters/heroine-adult-v3-neutral.png": "22cf67cfeda74e077250841fcdd8b6a2856bf40f399b4b63e9fb63d7e0919788",
+    "external/style/style-anchor-v3-final-art-derived.png": "b26c8a469098dc6de0d6316cd02714d3caeadc9c607b56c213a26ba09422eb2f"
+  },
+  "mask": null,
+  "mask_mode": null,
+  "mask_feather": null,
+  "mask_metrics": null,
+  "raw_edit": null,
+  "postprocess": null
+}
